@@ -6,13 +6,26 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script>
-	$(function(){
-		// All jQuery code goes here
-		
-		$('#alcoveLogo').css('opacity', 0.4);
+	$(function() {
+		//$('#alcoveLogo').next().css('background-color', 'red');
 
-		$('.servicesBtn').css('color', '#FFF');
-	})
+		//$('.box1').nextAll().css('background-color', 'red');
+
+		//$('.header').children().css('background-color', 'red');
+
+	});
+	$(document).on('click', '#ReqAQuoteBtn', function () {
+			var inputFields = $('input[type="text"]');
+
+			if (inputFields.css('background-color') == 'rgb(255,0,0)') {
+					console.log('Setting to white');
+					inputFields.css('background-color', 'rgb(255,255,255)');
+			}
+			else {
+					console.log('Setting to red');
+					inputFields.css('background-color', 'rgb(255,0,0)');
+			}
+	});
 	</script>
 </head>
 <body>
