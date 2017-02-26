@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Datatables Test</title>
+        <link rel="stylesheet" href="//cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+    </head>
+    <body>
+
+        <h1>Datatables Test</h1>
+        <p>This is a test of the JQuery plugin Datables</p>
+
+        <table id="test-table" class="display" width="100%"></table>
+
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
+        <script type="text/javascript" src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js" ></script>
+        <script type="text/javascript">
+            // declare dataSet
+            var dataSet;
+
+            // get json from file
+            $.getJSON('data.json', function(json, textStatus) {
+                // set dataSet
+                dataSet = json;
+
+                // use json in datatable
+                $('#test-table').DataTable( {
+                    data: dataSet,
+                    columns: [
+                        { title: "App Version" },
+                        { title: "Hook Ending" },
+                        { title: "Full Hook" }
+                        ]
+                } );
+            });
+        </script>
+    </body>
+</html>
