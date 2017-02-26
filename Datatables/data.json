@@ -1,10 +1,10 @@
 [
-	["6.5", "y", "com.google.android.apps.gsa.search.shared.service.y"],
-	["6.6", "ab", "com.google.android.apps.gsa.search.shared.service.ab"],
-	["6.7", "ab", "com.google.android.apps.gsa.search.shared.service.ab"],
-	["6.8", "ab", "com.google.android.apps.gsa.search.shared.service.ab"],
-	["6.9", "y", "com.google.android.apps.gsa.search.shared.service.y"],
-	["6.10", "ad", "com.google.android.apps.gsa.search.shared.service.ad"],
-	["6.11", "ac", "com.google.android.apps.gsa.search.shared.service.ac"],
-	["6.12", "ac", "com.google.android.apps.gsa.search.shared.service.ac"]
+	["v6.5", "y", "com.google.android.apps.gsa.search.shared.service.y"],
+	["v6.6", "ab", "com.google.android.apps.gsa.search.shared.service.ab"],
+	["v6.7", "ab", "com.google.android.apps.gsa.search.shared.service.ab"],
+	["v6.8", "ab", "com.google.android.apps.gsa.search.shared.service.ab"],
+	["v6.9", "y", "com.google.android.apps.gsa.search.shared.service.y"],
+	["v6.10", "ad", "com.google.android.apps.gsa.search.shared.service.ad"],
+	["v6.11", "ac", "com.google.android.apps.gsa.search.shared.service.ac"],
+	["v6.12", "ac", "com.google.android.apps.gsa.search.shared.service.ac"]
 ]

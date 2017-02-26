@@ -12,8 +12,9 @@
 
         <table id="test-table" class="display" width="100%"></table>
 
-        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
-        <script type="text/javascript" src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js" ></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+        <script src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js" charset="utf-8"></script>
+        <script src="//cdn.datatables.net/plug-ins/1.10.13/sorting/natural.js" charset="utf-8"></script>
         <script type="text/javascript">
             // declare dataSet
             var dataSet;
@@ -30,7 +31,11 @@
                         { title: "App Version" },
                         { title: "Hook Ending" },
                         { title: "Full Hook" }
-                        ]
+                    ],
+                    columnDefs: [
+                        { type: 'natural', targets: 0 }
+                    ],
+                    order: [[ 0, "desc" ]]
                 } );
             });
         </script>
